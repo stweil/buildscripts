@@ -999,7 +999,7 @@ index b85d9f9..7c6ba39 100644
 -
 -2003-09-01  Ross Johnson  <rpj at callisto.canberra.edu.au>
 -
--	* pthread_self.c (pthread_self): The newly aquired pthread_t must be
+-	* pthread_self.c (pthread_self): The newly acquired pthread_t must be
 -	assigned to the reuse stack, not freed, if the routine fails somehow.
 -
 -2003-08-13  Ross Johnson  <rpj at ise.canberra.edu.au>
@@ -1495,7 +1495,7 @@ index b85d9f9..7c6ba39 100644
 -	* pthread_attr_setstackaddr.c: Likewise.
 -	* pthread_attr_setstacksize.c: Likewise.
 -
--	* pthread.c: Agregation of agregate modules for super-inlineability.
+-	* pthread.c: Agregation of aggregate modules for super-inlineability.
 -
 -2002-02-02  Ross Johnson  <rpj at setup1.ise.canberra.edu.au>
 -
@@ -1812,7 +1812,7 @@ index b85d9f9..7c6ba39 100644
 -
 -2001-07-05  Ross Johnson  <rpj at setup1.ise.canberra.edu.au>
 -
--	* barrier.c: Remove static initialisation - irrelevent
+-	* barrier.c: Remove static initialisation - irrelevant
 -	for this object.
 -	* pthread.h (PTHREAD_BARRIER_INITIALIZER): Removed.
 -	* rwlock.c (pthread_rwlock_wrlock): This routine is
@@ -2360,7 +2360,7 @@ index b85d9f9..7c6ba39 100644
 -	function pointer arg in _beginthread().
 -
 -	* pthread.h: PT_STDCALL really does need to be defined
--	in both this and impliment.h; don't set it to __cdecl
+-	in both this and implement.h; don't set it to __cdecl
 -	- this macro is only used to extend function pointer
 -	casting for functions that will be passed as parameters.
 -	(~PThreadCleanup): add cast and group expression.
@@ -2777,7 +2777,7 @@ index b85d9f9..7c6ba39 100644
 -1999-08-21  Ross Johnson  <rpj at ixobrychus.canberra.edu.au>
 -
 -	* private.c (ptw32_threadStart): Apply fix of 1999-08-19
--	this time to C++ and non-trapped C versions. Ommitted to
+-	this time to C++ and non-trapped C versions. Omitted to
 -	do this the first time through.
 -
 -1999-08-19  Ross Johnson  <rpj at ixobrychus.canberra.edu.au>
@@ -3606,7 +3606,7 @@ index b85d9f9..7c6ba39 100644
 -	(pthread_condattr_getpshared): Replaced by John Bossom's version.
 -	(pthread_condattr_setpshared): Replaced by John Bossom's version.
 -	(pthread_cond_init): Replaced by John Bossom's version.
--	Fix comment (refered to mutex rather than condition variable).
+-	Fix comment (referred to mutex rather than condition variable).
 -	(pthread_cond_destroy): Replaced by John Bossom's version.
 -	(pthread_cond_wait): Replaced by John Bossom's version.
 -	(pthread_cond_timedwait): Replaced by John Bossom's version.
@@ -4875,7 +4875,7 @@ index b85d9f9..7c6ba39 100644
 -	(pthread_cond_wait): Likewise.
 -	(pthread_cond_destroy): Likewise.
 -	(pthread_cond_t): Define this type.  Fix for u_int.  Do not assume
--	that the mutex contained withing the pthread_cond_t structure will
+-	that the mutex contained within the pthread_cond_t structure will
 -	be a critical section.  Use our new POSIX type!
 -
 -	* implement.h (ptw32_condattr_t): Remove shared attribute.
@@ -5213,7 +5213,7 @@ index b85d9f9..7c6ba39 100644
 +
 +	* implement.h (PTW32_INTERLOCKED_*): Mingw32 does not provide
 +	the __sync_* intrinsics so implemented them here as macro
-+	assembler routines. MSVS Interlocked* are emmitted as intrinsics
++	assembler routines. MSVS Interlocked* are emitted as intrinsics
 +	wherever possible, so we want mingw to match it; Extended to
 +	include all interlocked routines used by the library; implemented
 +	x86_64 versions also.
@@ -5280,7 +5280,7 @@ index b85d9f9..7c6ba39 100644
 +2010-06-18  Ramiro Polla  <ramiro.polla at gmail.com >
 +
 +	* autostatic.c: New file; call pthread_win32_process_*()
-+	libary init/cleanup routines automatically on application start
++	library init/cleanup routines automatically on application start
 +	when statically linked.
 +	* pthread.c (autostatic.c): Included.
 +	* pthread.h (declspec): Remove import/export defines if compiler
@@ -6210,7 +6210,7 @@ index b85d9f9..7c6ba39 100644
 +
 +2003-09-01  Ross Johnson  <rpj at callisto.canberra.edu.au>
 +
-+	* pthread_self.c (pthread_self): The newly aquired pthread_t must be
++	* pthread_self.c (pthread_self): The newly acquired pthread_t must be
 +	assigned to the reuse stack, not freed, if the routine fails somehow.
 +
 +2003-08-13  Ross Johnson  <rpj at ise.canberra.edu.au>
@@ -6706,7 +6706,7 @@ index b85d9f9..7c6ba39 100644
 +	* pthread_attr_setstackaddr.c: Likewise.
 +	* pthread_attr_setstacksize.c: Likewise.
 +
-+	* pthread.c: Agregation of agregate modules for super-inlineability.
++	* pthread.c: Agregation of aggregate modules for super-inlineability.
 +
 +2002-02-02  Ross Johnson  <rpj at setup1.ise.canberra.edu.au>
 +
@@ -7023,7 +7023,7 @@ index b85d9f9..7c6ba39 100644
 +
 +2001-07-05  Ross Johnson  <rpj at setup1.ise.canberra.edu.au>
 +
-+	* barrier.c: Remove static initialisation - irrelevent
++	* barrier.c: Remove static initialisation - irrelevant
 +	for this object.
 +	* pthread.h (PTHREAD_BARRIER_INITIALIZER): Removed.
 +	* rwlock.c (pthread_rwlock_wrlock): This routine is
@@ -7571,7 +7571,7 @@ index b85d9f9..7c6ba39 100644
 +	function pointer arg in _beginthread().
 +
 +	* pthread.h: PT_STDCALL really does need to be defined
-+	in both this and impliment.h; don't set it to __cdecl
++	in both this and implement.h; don't set it to __cdecl
 +	- this macro is only used to extend function pointer
 +	casting for functions that will be passed as parameters.
 +	(~PThreadCleanup): add cast and group expression.
@@ -7988,7 +7988,7 @@ index b85d9f9..7c6ba39 100644
 +1999-08-21  Ross Johnson  <rpj at ixobrychus.canberra.edu.au>
 +
 +	* private.c (ptw32_threadStart): Apply fix of 1999-08-19
-+	this time to C++ and non-trapped C versions. Ommitted to
++	this time to C++ and non-trapped C versions. Omitted to
 +	do this the first time through.
 +
 +1999-08-19  Ross Johnson  <rpj at ixobrychus.canberra.edu.au>
@@ -8817,7 +8817,7 @@ index b85d9f9..7c6ba39 100644
 +	(pthread_condattr_getpshared): Replaced by John Bossom's version.
 +	(pthread_condattr_setpshared): Replaced by John Bossom's version.
 +	(pthread_cond_init): Replaced by John Bossom's version.
-+	Fix comment (refered to mutex rather than condition variable).
++	Fix comment (referred to mutex rather than condition variable).
 +	(pthread_cond_destroy): Replaced by John Bossom's version.
 +	(pthread_cond_wait): Replaced by John Bossom's version.
 +	(pthread_cond_timedwait): Replaced by John Bossom's version.
@@ -10086,7 +10086,7 @@ index b85d9f9..7c6ba39 100644
 +	(pthread_cond_wait): Likewise.
 +	(pthread_cond_destroy): Likewise.
 +	(pthread_cond_t): Define this type.  Fix for u_int.  Do not assume
-+	that the mutex contained withing the pthread_cond_t structure will
++	that the mutex contained within the pthread_cond_t structure will
 +	be a critical section.  Use our new POSIX type!
 +
 +	* implement.h (ptw32_condattr_t): Remove shared attribute.
@@ -10270,7 +10270,7 @@ index 4f2d449..cb1786c 100644
 +debug problems arise from the process of freeing and later allocing
 +thread structs because new pthread_t handles can acquire the identity of
 +previously detached threads. The change to a struct was made, along with
-+some changes to their internal managment, in order to guarantee (for
++some changes to their internal management, in order to guarantee (for
 +practical applications) that the pthread_t handle will be unique over the
 +life of the running process.
 +
@@ -11607,7 +11607,7 @@ index aa43297..0821104 100644
 +
 +Solutions
 +
-+Adding new functions to the standard API or as non-portable extentions is
++Adding new functions to the standard API or as non-portable extensions is
 +the only reliable and portable way to provide the necessary operations.
 +Remember also that POSIX is not tied to the C language. The most common
 +functions that have been suggested are:
@@ -11856,7 +11856,7 @@ index aa43297..0821104 100644
 +
 +
 +An application-level pthread_null and pthread_compare proposal
-+(and pthread_hash proposal by extention)
++(and pthread_hash proposal by extension)
 +
 +In order to deal with the problem of scalar/aggregate pthread_t type disparity in
 +portable code I suggest using an old-fashioned union, e.g.:
@@ -11927,7 +11927,7 @@ index aa43297..0821104 100644
 +An aside
 +
 +Certain compilers, e.g. gcc and one of the IBM compilers, include a feature
-+extention: provided the union contains a member of the same type as the
++extension: provided the union contains a member of the same type as the
 +object then the object may be cast to the union itself.
 +
 +We could use this feature to speed up the pthrcmp() function from example 2
@@ -12947,7 +12947,7 @@ index 3d96483..693be26 100644
   *      This macro constructs a software exception code following
   *      the same format as the standard Win32 error codes as defined
   *      in WINERROR.H
-- *  Values are 32 bit values layed out as follows:
+- *  Values are 32 bit values laid out as follows:
 + *  Values are 32 bit values laid out as follows:
   *
   *   1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
@@ -23729,7 +23729,7 @@ index 9a70a40..65bcdbe 100644
 -   * continues. Note: need to check correct POSIX behaviour.
 -   * My guess is: this is because of the
 -   * eh incompatibility between g++ and MSVC++. That is,
--   * an exception thrown in g++ code doesn't propogate
+-   * an exception thrown in g++ code doesn't propagate
 -   * through or to MSVC++ code, and vice versa.
 -   * Applications should probably not depend on this.
 -   */
