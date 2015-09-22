@@ -1495,7 +1495,7 @@ index b85d9f9..7c6ba39 100644
 -	* pthread_attr_setstackaddr.c: Likewise.
 -	* pthread_attr_setstacksize.c: Likewise.
 -
--	* pthread.c: Agregation of aggregate modules for super-inlineability.
+-	* pthread.c: Aggregation of aggregate modules for super-inlineability.
 -
 -2002-02-02  Ross Johnson  <rpj at setup1.ise.canberra.edu.au>
 -
@@ -6706,7 +6706,7 @@ index b85d9f9..7c6ba39 100644
 +	* pthread_attr_setstackaddr.c: Likewise.
 +	* pthread_attr_setstacksize.c: Likewise.
 +
-+	* pthread.c: Agregation of aggregate modules for super-inlineability.
++	* pthread.c: Aggregation of aggregate modules for super-inlineability.
 +
 +2002-02-02  Ross Johnson  <rpj at setup1.ise.canberra.edu.au>
 +
